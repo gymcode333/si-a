@@ -8,7 +8,7 @@ import Link from 'next/link';
 function BMICalculator() {
   const [waga, setWaga] = useState('');
   const [wzrost, setWzrost] = useState('');
-  const [bmi, setBmi] = useState(null);
+  const [bmi, setBmi] = useState<string | null>(null);
   const [kategoria, setKategoria] = useState('');
 
   const obliczBMI = () => {
